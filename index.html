@@ -10,7 +10,7 @@
          }
       </style>
       <link href="css/default.css" type="text/css" rel="stylesheet">
-	  <script src="music.js"></script>
+	 
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/garden.js"></script>
       <script type="text/javascript" src="js/functions.js"></script>
@@ -106,6 +106,18 @@
          }
       </script>
       <script type="text/javascript" src="js/fireworks.js"></script>
+				<script>
+    // Get the audio element
+    const audio = document.getElementById('loopingAudio');
+
+    // Function to play the audio
+    function playAudio() {
+      audio.play();
+    }
+
+    // Add an event listener to the body (you can change this to any other element)
+    document.body.addEventListener('click', playAudio);
+  </script>
 	  
 	  <audio id="birthdayAudio1" src="vaathi1.mp3" preload="auto"></audio>
 	  <audio id="birthdayAudio2" src="vaathi2.mp3" preload="auto"></audio>
